@@ -6,11 +6,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- description is what appears on google -->
 		<meta name="description" content="schnoute">
-		<title>Game web page</title>
+		<title>Practice stuff</title>
 	</head>
 	<body>
-		<img src="fire_avocado.png" alt="">
-		<p class="gras">Ceci est un texte en gras</p>
-		<p class="mince">Ceci est un texte pas en grasssss</p>
+		<header>
+			<img src="fire_avocado.png" alt="">
+			<div id="avocado-banner">
+				<h1 class="title">Avocados!!</h1>
+				<p>list of the best avocados</p>
+				<form id="search-form">
+					<input type="text" placeholder="Search avocado..." />
+				</form>
+			</div>
+			<div id="avocado-list">
+				<h2 class="title">Avocado to eat</h2>
+				<ul>
+					<li>
+						<span class="avocado-name">Bobbbbbby</span>
+						<span class="delete">delete</span>
+					</li>
+					<li>
+						<span class="avocado-name">Jack</span>
+						<span class="delete">delete</span>
+					</li>
+					<li>
+						<span id="mike" class="avocado-name">Mikessssss</span>
+						<span class="delete">delete</span>
+					</li>
+				</ul>
+				<form id="add-form">
+					<input type="text" placeholder="Add avocado..." />
+					<button type="button" onclick="Converter()">Add</button>
+				</form>
+			</div>
+		</header>
+		<script src="app.js"></script>
 	</body>
 </html>

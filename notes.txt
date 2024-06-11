@@ -1,0 +1,15 @@
+npm: package manager (like brew)
+node.js: live-server
+
+to install:
+brew install node
+brew postinsall node
+npm install -g live-server
+OR
+sudo npm install live-server
+
+to run:
+live-server
+
+transformer une liste de la dom en array:
+Array.from(liste)
