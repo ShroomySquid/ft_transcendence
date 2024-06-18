@@ -202,7 +202,7 @@ const formData = new FormData()
 
 formData.append('name', 'bob');
 formData.append('email', 'bob@bob.com');
-formData.append('name', 'cooking');
+formData.append('subject', 'cooking');
 
 const test_send_django = async () => {
 	const response = await fetch('http://127.0.0.1:8000/contact/', {
@@ -216,8 +216,11 @@ const test_send_django = async () => {
 	return data;
 };
 
+console.log(1);
+console.log(2);
 const django_test = test_send_django()
 	.then(data => console.log('success:', data))
 	.catch (err => console.log('error:', err.message));
-
+console.log(3);
+console.log(4);
 
